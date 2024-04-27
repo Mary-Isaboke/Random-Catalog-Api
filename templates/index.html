@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+  <link rel="stylesheet" href="{% static 'styles.css'%}"/>
+</head>
+<body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  
+    <h1> Hi there, Welcome to My Website</h1>
+    
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>Hi there, I am Mary Issa, a passionate web developer with a knack for turning ideas into reality through code.</p>
+          <br>
+          <p>"Welcome! Get ready to dive into the world of fascinating facts. Sit back, relax, and let's embark on a journey of discovery together. Enjoy exploring our collection of random facts, and prepare to be amazed!"</p>
+        </section>
+      <section>
+        <h1>Random Jokes</h1>
+        <p>Get random jokes. You can get jokes according to type eg programming jokes</p>
+        {{jokes}}
+      </section>
+      <section>
+        <h1>Random Facts</h1>
+        <p>Get random cat facts via text message every day.</p>
+        {{facts}}
+      </section>
+      <section>
+        <h1>Random Gender Predictions</h1>
+        <p>Get the predictions of a person based on their name.</p>
+        {{gender}}
+      </section>
+      <section>
+        <h1>Are you Bored? Try this Bored free API</h1>
+        <p>Find something to do by getting suggestions for random activities.</p>
+        {{activity}}
+      </section>
+      <section>
+        <h1>Random Dogs Breed Images</h1>
+        <p>Cheer yourself up with some random dog images</p>
+        <img src="{{dog}}" alt="">
+      </section>
+      <br>
+      <section id="contacts">
+          <h2>My Contacts</h2>
+          <p>Feel free to reach me through for more random facts.</p>
+          <ul>
+              <li>Email:<a href="mailto:maryissa579@gmail.com">maryissa579@gmail.com</a></li>
+          </ul>
+          <p>Phone: +25471234567</p>
+      </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
